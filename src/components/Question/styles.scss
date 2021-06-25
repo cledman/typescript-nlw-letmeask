@@ -34,6 +34,33 @@
                 margin-left: 8px;
             }
         } 
+
+        button {
+            background: transparent;
+            border: 0;
+            cursor: pointer;
+            transition: filter 0.2s;
+
+            &.like-button {
+                align-items: flex-end;
+                color: #737380;
+                display: flex;
+                gap: 8px;
+
+                &.liked {
+                    color:#835AFD;
+                    svg.path {
+                        stroke: #835AFD;
+                    }   
+                }
+
+
+            }
+
+            &:hover {
+               filter: brightness(0.7); 
+            }
+        }
     }    
 }
 
